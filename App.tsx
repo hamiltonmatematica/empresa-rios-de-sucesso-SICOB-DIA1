@@ -7,6 +7,10 @@ import { Agenda } from './components/Agenda';
 import { Registration } from './components/Registration';
 import { Footer } from './components/Footer';
 
+import { Confrarias } from './components/Confrarias';
+
+import { Testimonials } from './components/Testimonials';
+
 function App() {
   return (
     <div className="min-h-screen bg-brand-dark text-slate-50 font-sans selection:bg-brand-neon selection:text-brand-dark">
@@ -16,6 +20,8 @@ function App() {
         <Mission />
         <Speakers />
         <Agenda />
+        <Confrarias />
+        <Testimonials />
         <Registration />
       </main>
       <Footer />
