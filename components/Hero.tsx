@@ -16,11 +16,11 @@ export const Hero: React.FC = () => {
       <div className="container mx-auto px-4 relative z-10 flex flex-col items-center text-center">
 
         {/* Sponsor Section */}
-        <div className="flex flex-col items-center gap-2 mb-8">
+        <div className="flex flex-col items-center gap-3 mb-10">
           <img
             src="/sicoob.png"
             alt="Sicoob"
-            className="h-12 md:h-16 w-auto"
+            className="h-24 md:h-40 w-auto"
           />
           <span className="text-gray-400 text-xs md:text-sm font-light tracking-widest uppercase">apresenta:</span>
         </div>
@@ -84,6 +84,6 @@ export const Hero: React.FC = () => {
           </div>
         </div>
       </div>
-    </section>
+    </section >
   );
 };

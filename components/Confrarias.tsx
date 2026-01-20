@@ -1,5 +1,6 @@
 import React from 'react';
 import { Users, Rocket, Target, ArrowRight } from 'lucide-react';
+import { Button } from './Button';
 
 export const Confrarias: React.FC = () => {
     const confrarias = [
@@ -16,8 +17,8 @@ export const Confrarias: React.FC = () => {
             color: "from-violet-500 to-purple-400"
         },
         {
-            title: "Confraria do Fred",
-            description: "A comunidade de empresários que caminham com Fred Rocha, com foco em vendas, posicionamento e inovação. É onde você continua aprendendo o novo jeito de vender, testa ideias, recebe feedback direto e mantém o radar ligado para o que está acontecendo no varejo e no consumo.",
+            title: "Mentoria Estratégica",
+            description: "Três meses de acompanhamento exclusivo com encontros quinzenais online. Tenha acesso direto a Diego Suzano, Fred Rocha e convidados especiais para validar suas decisões e acelerar seus resultados pós-evento.",
             icon: Target,
             color: "from-amber-500 to-orange-400"
         }
@@ -56,7 +57,7 @@ export const Confrarias: React.FC = () => {
                 </div>
 
                 {/* Highlight Box */}
-                <div className="bg-gradient-to-r from-brand-blue/20 to-brand-dark border border-brand-neon/30 rounded-2xl p-8 max-w-4xl mx-auto flex flex-col md:flex-row items-center gap-6 shadow-[0_0_30px_rgba(0,209,255,0.1)]">
+                <div className="bg-gradient-to-r from-brand-blue/20 to-brand-dark border border-brand-neon/30 rounded-2xl p-8 max-w-4xl mx-auto flex flex-col items-center gap-6 shadow-[0_0_30px_rgba(0,209,255,0.1)] text-center">
                     <div className="bg-brand-neon/10 p-4 rounded-full">
                         <ArrowRight className="text-brand-neon w-8 h-8" />
                     </div>
@@ -65,6 +66,12 @@ export const Confrarias: React.FC = () => {
                         <p className="text-gray-300">
                             Ao garantir a <span className="text-brand-neon font-semibold">Imersão Completa</span>, você já sai do evento com mentoria online pós-evento e acesso facilitado a esse ecossistema de confrarias, aumentando muito suas chances de aplicar tudo o que aprendeu e não voltar sozinho para a rotina.
                         </p>
+                    </div>
+
+                    <div className="flex-shrink-0 flex justify-center w-full">
+                        <Button onClick={() => document.getElementById('inscricao')?.scrollIntoView({ behavior: 'smooth' })}>
+                            GARANTA SUA VAGA
+                        </Button>
                     </div>
                 </div>
             </div>

@@ -19,9 +19,9 @@ export const SPEAKERS: Speaker[] = [
 export const AGENDA_DAY_1: AgendaItem[] = [
   {
     time: "19h00",
-    title: "Palestra Magna: O Novo Jeito de Vender",
+    title: "2026 PARA LÍDERES",
     speaker: "Diego e Fred",
-    description: "Uma visão disruptiva sobre o varejo, inovação e o futuro das vendas."
+    description: "Análise estratégica para um ano com Eleições, Copa, barulho e distração. Exclusivo para executivos e donos de empresas."
   },
   {
     time: "20h30",
@@ -98,25 +98,25 @@ export const AGENDA_DAY_2: AgendaItem[] = [
 ];
 
 export const CITIES: City[] = [
-  { name: "Taiobeiras", date: "03 de Fevereiro" },
-  { name: "Bocaiuva", date: "09 de Fevereiro" },
-  { name: "Brasília de Minas", date: "09 de Fevereiro" },
   { name: "Montes Claros", date: "11 de Fevereiro" },
-  { name: "Rio Pardo de Minas", date: "23 de Fevereiro" },
-  { name: "Guanambi", date: "25 de Fevereiro" },
-  { name: "Coração de Jesus", date: "02 de Março" },
-  { name: "Corinto", date: "05 de Março" }
+  { name: "Bocaiuva", date: "Data a confirmar" },
+  { name: "Brasília de Minas", date: "Data a confirmar" },
+  { name: "Coração de Jesus", date: "Data a confirmar" },
+  { name: "Corinto", date: "Data a confirmar" },
+  { name: "Guanambi", date: "Data a confirmar" },
+  { name: "Rio Pardo de Minas", date: "Data a confirmar" },
+  { name: "Taiobeiras", date: "Data a confirmar" }
 ];
 
 export const CITIES_FULL: City[] = [
-  { name: "Taiobeiras", date: "03 e 04 de Fevereiro" },
-  { name: "Bocaiuva", date: "09 e 10 de Fevereiro" },
-  { name: "Brasília de Minas", date: "09 e 10 de Fevereiro" },
   { name: "Montes Claros", date: "11 e 12 de Fevereiro" },
-  { name: "Rio Pardo de Minas", date: "23 e 24 de Fevereiro" },
-  { name: "Guanambi", date: "25 e 26 de Fevereiro" },
-  { name: "Coração de Jesus", date: "02 e 03 de Março" },
-  { name: "Corinto", date: "05 e 06 de Março" }
+  { name: "Bocaiuva", date: "Data a confirmar" },
+  { name: "Brasília de Minas", date: "Data a confirmar" },
+  { name: "Coração de Jesus", date: "Data a confirmar" },
+  { name: "Corinto", date: "Data a confirmar" },
+  { name: "Guanambi", date: "Data a confirmar" },
+  { name: "Rio Pardo de Minas", date: "Data a confirmar" },
+  { name: "Taiobeiras", date: "Data a confirmar" }
 ];
 
 export const BENEFITS: Benefit[] = [

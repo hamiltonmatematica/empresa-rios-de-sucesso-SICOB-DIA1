@@ -1,5 +1,6 @@
 import React from 'react';
 import { BENEFITS } from '../constants';
+import { Button } from './Button';
 
 export const Mission: React.FC = () => {
   return (
@@ -13,7 +14,7 @@ export const Mission: React.FC = () => {
               Destravar o futuro empresarial e preparar 2026
             </h3>
             <p className="text-gray-300 text-lg leading-relaxed">
-              Dezembro não foi escolhido por acaso: 2026 bate à porta com muitas incertezas e desafios. O empresário, em sua grande maioria, permanece solitário em sua tomada de decisão.
+              O primeiro trimestre não foi escolhido por acaso: 2026 bate à porta com muitas incertezas e desafios. O empresário, em sua grande maioria, permanece solitário em sua tomada de decisão.
             </p>
             <p className="text-gray-300 text-lg leading-relaxed">
               Decidimos realizar este <span className="text-brand-neon font-semibold">Roadshow presencial</span>, totalmente focado em planejamento, conteúdo estratégico e imersão prática.
@@ -23,13 +24,19 @@ export const Mission: React.FC = () => {
                 "Sentar à mesa com Fred Rocha e Diego Suzano em um dia de alta troca, muito conhecimento e grandes insights."
               </p>
             </div>
+
+            <div className="pt-8 flex justify-center">
+              <Button onClick={() => document.getElementById('inscricao')?.scrollIntoView({ behavior: 'smooth' })}>
+                GARANTA SUA VAGA
+              </Button>
+            </div>
           </div>
 
           <div className="relative">
             <div className="absolute -inset-4 bg-brand-neon/20 rounded-xl blur-xl"></div>
             <div className="relative bg-slate-900/90 backdrop-blur-xl p-8 rounded-xl border border-brand-neon/20">
               <h4 className="text-2xl font-bold text-white mb-6 border-b border-white/10 pb-4">
-                Para quem é esta imersão?
+                Esta imersão é indicada para quem quer:
               </h4>
               <ul className="space-y-4">
                 {BENEFITS.map((benefit, index) => (
