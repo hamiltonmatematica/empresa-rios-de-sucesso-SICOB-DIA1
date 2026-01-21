@@ -18,6 +18,11 @@ export const Testimonials: React.FC = () => {
             content: "Fred Rocha é um profissional de excelência, com uma capacidade única de conectar conhecimento prático à realidade dos empresários. Seu trabalho junto às associações comerciais mineiras foi transformador, trazendo inovação, inspiração e resultados concretos.",
             author: "Valmir Rodrigues",
             role: "Presidente da Federaminas / Vice Presidente Sebrae Minas",
+        },
+        {
+            content: "Tive a oportunidade de assistir a palestra que o Diego Suzano deu no G4 Educação. Eu já esperava algo bom, mas confesso que fiquei impressionada com o que vi. A presença de palco, os insights de negócio e a visão de mercado do Diego realmente me impressionaram. Na época eu atuava como gestora de produtos educacionais do G4 e, por esse motivo, tinha contato constante com outros membros. Lembro claramente de receber ótimos feedbacks dessa palestra do Diego. Ouvi-lo é de fato uma aula de negócios.",
+            author: "Desirée Gonçalves",
+            role: "Community G4 Educação",
         }
     ];
 
