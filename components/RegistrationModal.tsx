@@ -33,37 +33,35 @@ export const RegistrationModal: React.FC<RegistrationModalProps> = ({ isOpen, on
         setIsSubmitting(true);
 
         try {
-            // Get selected city with date
-            const selectedCity = CITIES.find(c => c.name === formData.city);
-
-            // Prepare data for Google Sheets
-            const sheetData = {
-                timestamp: new Date().toISOString(),
-                name: formData.name,
-                phone: formData.phone,
-                city: formData.city,
-                date: selectedCity?.date || '',
-                ticketType: ticketType === 'day1' ? 'Dia 01 Apenas' : 'Dia 01 + 02 (com bônus)'
+            // Google Forms IDs
+            const FORM_IDS = {
+                'day1': '1FAIpQLSdLKh9SvHHj5ymYkwD8NtdfJ2lTq8JN8xWWra_4cIVIvUbYvg',
+                'day1-2': '1FAIpQLSf3-h-iyKG_jX7LVVdYU3yNR_0p5n3lFyIbtVXSSw5wNMeQMA'
             };
 
-            // TODO: Replace with your Google Apps Script URL
-            const GOOGLE_SCRIPT_URL = 'YOUR_GOOGLE_SCRIPT_URL_HERE';
+            const formId = FORM_IDS[ticketType];
+            const formUrl = `https://docs.google.com/forms/d/e/${formId}/formResponse`;
 
-            // Send to Google Sheets
-            const response = await fetch(GOOGLE_SCRIPT_URL, {
+            // Criar FormData para enviar ao Google Forms
+            const formDataToSend = new FormData();
+            formDataToSend.append('entry.381075147', formData.name);        // Nome
+            formDataToSend.append('entry.485670633', formData.phone);       // Telefone
+            formDataToSend.append('entry.1904133980', formData.city);       // Cidade
+
+            // Enviar para Google Forms via fetch
+            await fetch(formUrl, {
                 method: 'POST',
                 mode: 'no-cors',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify(sheetData)
+                body: formDataToSend
             });
 
-            // Redirect to payment link
-            // TODO: Replace with actual Asaas payment links
+            // Aguardar um pouco para garantir que o envio foi processado
+            await new Promise(resolve => setTimeout(resolve, 500));
+
+            // Redirecionar para o link de pagamento
             const paymentLinks = {
-                'day1': 'https://asaas.com/your-day1-payment-link',
-                'day1-2': 'https://asaas.com/your-day1-2-payment-link'
+                'day1': 'https://www.asaas.com/c/2n4c25ii66p0npoe',
+                'day1-2': 'https://www.asaas.com/c/nskr2juga3z5yfo5'
             };
 
             window.location.href = paymentLinks[ticketType];
