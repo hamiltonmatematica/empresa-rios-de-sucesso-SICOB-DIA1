@@ -13,6 +13,8 @@ export const RegistrationModal: React.FC<RegistrationModalProps> = ({ isOpen, on
     const [formData, setFormData] = useState({
         name: '',
         phone: '',
+        agency: '',
+        account: '',
         city: ''
     });
     const [isSubmitting, setIsSubmitting] = useState(false);
@@ -25,7 +27,7 @@ export const RegistrationModal: React.FC<RegistrationModalProps> = ({ isOpen, on
         setError('');
 
         // Validation
-        if (!formData.name || !formData.phone || !formData.city) {
+        if (!formData.name || !formData.phone || !formData.city || !formData.agency || !formData.account) {
             setError('Por favor, preencha todos os campos');
             return;
         }
@@ -140,6 +142,40 @@ export const RegistrationModal: React.FC<RegistrationModalProps> = ({ isOpen, on
                             onChange={handleChange}
                             className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-brand-neon transition-colors"
                             placeholder="(00) 00000-0000"
+                            required
+                        />
+                    </div>
+
+                    {/* Agency */}
+                    <div>
+                        <label htmlFor="agency" className="block text-sm font-medium text-gray-300 mb-2">
+                            Agência *
+                        </label>
+                        <input
+                            type="text"
+                            id="agency"
+                            name="agency"
+                            value={formData.agency}
+                            onChange={handleChange}
+                            className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-brand-neon transition-colors"
+                            placeholder="0000"
+                            required
+                        />
+                    </div>
+
+                    {/* Account Number */}
+                    <div>
+                        <label htmlFor="account" className="block text-sm font-medium text-gray-300 mb-2">
+                            Número da conta *
+                        </label>
+                        <input
+                            type="text"
+                            id="account"
+                            name="account"
+                            value={formData.account}
+                            onChange={handleChange}
+                            className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-brand-neon transition-colors"
+                            placeholder="00000-0"
                             required
                         />
                     </div>
