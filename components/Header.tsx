@@ -28,7 +28,7 @@ export const Header: React.FC = () => {
         }`}
     >
       <div className="container mx-auto px-4 md:px-6 flex justify-between items-center">
-        <div className="font-serif font-bold text-xl md:text-2xl tracking-tighter leading-none text-brand-neon drop-shadow-[0_0_5px_rgba(0,209,255,0.5)] cursor-pointer" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
+        <div className="font-serif font-bold text-xl md:text-2xl tracking-tighter leading-none text-brand-neon drop-shadow-[0_0_5px_rgba(211, 225, 51,0.5)] cursor-pointer" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
           EMPRESÁRIOS<br />
           <span className="text-white text-sm md:text-base tracking-widest font-sans font-light">DE SUCESSO</span>
         </div>

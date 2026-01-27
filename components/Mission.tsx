@@ -9,7 +9,7 @@ export const Mission: React.FC = () => {
 
         <div className="grid md:grid-cols-2 gap-12 items-center mb-20">
           <div className="space-y-6">
-            <h2 className="text-brand-neon font-bold tracking-widest uppercase text-sm drop-shadow-[0_0_5px_rgba(0,209,255,0.5)]">O Manifesto da Virada</h2>
+            <h2 className="text-brand-neon font-bold tracking-widest uppercase text-sm drop-shadow-[0_0_5px_rgba(211, 225, 51,0.5)]">O Manifesto da Virada</h2>
             <h3 className="text-4xl md:text-5xl font-serif text-white font-bold leading-tight">
               Destravar o futuro empresarial e preparar 2026
             </h3>
@@ -19,7 +19,7 @@ export const Mission: React.FC = () => {
             <p className="text-gray-300 text-lg leading-relaxed">
               Decidimos realizar este <span className="text-brand-neon font-semibold">Roadshow presencial</span>, totalmente focado em planejamento, conteúdo estratégico e imersão prática.
             </p>
-            <div className="bg-brand-blue/20 p-6 border-l-4 border-brand-neon rounded-r-lg shadow-[0_0_20px_rgba(0,209,255,0.05)]">
+            <div className="bg-brand-blue/20 p-6 border-l-4 border-brand-neon rounded-r-lg shadow-[0_0_20px_rgba(211, 225, 51,0.05)]">
               <p className="text-white italic">
                 "Sentar à mesa com Fred Rocha e Diego Suzano em um dia de alta troca, muito conhecimento e grandes insights."
               </p>

@@ -8,7 +8,7 @@ export const Confrarias: React.FC = () => {
             title: "Confraria Credinor",
             description: "Uma confraria criada para aproximar empresários do Norte de Minas em torno de negócios reais, troca de experiências e relacionamento estratégico. Aqui, o foco é construir parcerias, abrir portas e discutir, com profundidade, os desafios da região e as oportunidades para 2026 e além.",
             icon: Users,
-            color: "from-blue-500 to-cyan-400"
+            color: "from-brand-deep to-brand-neon"
         },
         {
             title: "T3 Hub",
@@ -57,7 +57,7 @@ export const Confrarias: React.FC = () => {
                 </div>
 
                 {/* Highlight Box */}
-                <div className="bg-gradient-to-r from-brand-blue/20 to-brand-dark border border-brand-neon/30 rounded-2xl p-8 max-w-4xl mx-auto flex flex-col items-center gap-6 shadow-[0_0_30px_rgba(0,209,255,0.1)] text-center">
+                <div className="bg-gradient-to-r from-brand-blue/20 to-brand-dark border border-brand-neon/30 rounded-2xl p-8 max-w-4xl mx-auto flex flex-col items-center gap-6 shadow-[0_0_30px_rgba(211, 225, 51,0.1)] text-center">
                     <div className="bg-brand-neon/10 p-4 rounded-full">
                         <ArrowRight className="text-brand-neon w-8 h-8" />
                     </div>

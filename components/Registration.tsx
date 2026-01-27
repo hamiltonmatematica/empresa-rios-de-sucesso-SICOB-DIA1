@@ -20,10 +20,10 @@ export const Registration: React.FC = () => {
       <div className="absolute bottom-0 left-0 w-full h-[300px] bg-gradient-to-t from-brand-neon/10 to-transparent pointer-events-none"></div>
 
       <div className="container mx-auto px-4 md:px-6 relative z-10">
-        <div className="bg-white/5 backdrop-blur-xl border border-brand-neon/30 rounded-3xl p-8 md:p-16 text-center max-w-4xl mx-auto shadow-[0_0_50px_rgba(0,209,255,0.1)]">
+        <div className="bg-white/5 backdrop-blur-xl border border-brand-neon/30 rounded-3xl p-8 md:p-16 text-center max-w-4xl mx-auto shadow-[0_0_50px_rgba(211, 225, 51,0.1)]">
 
           <h2 className="text-3xl md:text-5xl font-serif font-bold text-white mb-6">
-            Escolha sua <span className="text-brand-neon drop-shadow-[0_0_10px_rgba(0,209,255,0.5)]">Experiência</span>
+            Escolha sua <span className="text-brand-neon drop-shadow-[0_0_10px_rgba(211, 225, 51,0.5)]">Experiência</span>
           </h2>
 
           <p className="text-lg md:text-xl text-gray-300 mb-10 max-w-2xl mx-auto">
@@ -36,7 +36,7 @@ export const Registration: React.FC = () => {
             {/* Day 1 Only Option */}
             <div className="bg-white/[0.03] border border-white/10 rounded-2xl p-6 hover:border-brand-neon/50 transition-all duration-300 group">
               <div className="mb-4">
-                <span className="inline-block px-3 py-1 bg-blue-500/20 text-blue-300 text-xs font-bold rounded-full mb-3">
+                <span className="inline-block px-3 py-1 bg-brand-deep/20 text-brand-deep text-xs font-bold rounded-full mb-3">
                   DIA 01
                 </span>
                 <h3 className="text-2xl font-bold text-white mb-2">Palestra + Autógrafos</h3>
@@ -58,17 +58,28 @@ export const Registration: React.FC = () => {
                 </li>
               </ul>
 
+              <div className="mb-6 space-y-2">
+                <div className="flex justify-between items-center text-sm">
+                  <span className="text-gray-400">PÚBLICO GERAL</span>
+                  <span className="text-gray-400 line-through decoration-red-500/50 decoration-2">R$ 99,00</span>
+                </div>
+                <div className="flex justify-between items-center bg-brand-neon/10 p-2 rounded-lg border border-brand-neon/20">
+                  <span className="text-brand-neon font-bold text-sm">CORRENTISTA CREDINOR</span>
+                  <span className="text-brand-neon font-bold text-lg">R$ 49,00</span>
+                </div>
+              </div>
+
               <Button
                 onClick={() => handleOpenModal('day1')}
                 variant="outline"
-                className="w-full group-hover:shadow-[0_0_20px_rgba(0,209,255,0.3)]"
+                className="w-full group-hover:shadow-[0_0_20px_rgba(211, 225, 51,0.3)]"
               >
                 GARANTIR DIA 01
               </Button>
             </div>
 
             {/* Day 1+2 Option */}
-            <div className="bg-gradient-to-br from-brand-neon/10 to-brand-blue/10 border-2 border-brand-neon rounded-2xl p-6 relative overflow-hidden group shadow-[0_0_30px_rgba(0,209,255,0.15)]">
+            <div className="bg-gradient-to-br from-brand-neon/10 to-brand-deep/10 border-2 border-brand-neon rounded-2xl p-6 relative overflow-hidden group shadow-[0_0_30px_rgba(211, 225, 51,0.15)]">
               {/* Popular badge */}
               <div className="absolute top-0 right-0 bg-brand-neon text-brand-dark font-bold text-xs px-4 py-1 rounded-bl-xl">
                 MAIS POPULAR
@@ -108,6 +119,17 @@ export const Registration: React.FC = () => {
                   <span>🎁 BÔNUS: Livro autografado</span>
                 </li>
               </ul>
+
+              <div className="mb-6 space-y-2">
+                <div className="flex justify-between items-center text-sm">
+                  <span className="text-gray-400">PÚBLICO GERAL</span>
+                  <span className="text-gray-400 line-through decoration-red-500/50 decoration-2">R$ 997,00</span>
+                </div>
+                <div className="flex justify-between items-center bg-brand-neon/10 p-2 rounded-lg border border-brand-neon/20">
+                  <span className="text-brand-neon font-bold text-sm">CORRENTISTA CREDINOR</span>
+                  <span className="text-brand-neon font-bold text-lg">R$ 697,00</span>
+                </div>
+              </div>
 
               <Button
                 onClick={() => handleOpenModal('day1-2')}

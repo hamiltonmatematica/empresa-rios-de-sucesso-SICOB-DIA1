@@ -60,8 +60,8 @@ export const RegistrationModal: React.FC<RegistrationModalProps> = ({ isOpen, on
 
             // Redirecionar para o link de pagamento
             const paymentLinks = {
-                'day1': 'https://www.asaas.com/c/2n4c25ii66p0npoe',
-                'day1-2': 'https://www.asaas.com/c/nskr2juga3z5yfo5'
+                'day1': 'https://www.asaas.com/c/yfle7id1bfw0kj8g',
+                'day1-2': 'https://www.asaas.com/c/hbz0lzm3geygqvkz'
             };
 
             window.location.href = paymentLinks[ticketType];
@@ -89,7 +89,7 @@ export const RegistrationModal: React.FC<RegistrationModalProps> = ({ isOpen, on
             ></div>
 
             {/* Modal */}
-            <div className="relative bg-brand-dark border-2 border-brand-neon/30 rounded-2xl p-8 max-w-md w-full shadow-[0_0_50px_rgba(0,209,255,0.2)] animate-scale-in">
+            <div className="relative bg-brand-dark border-2 border-brand-neon/30 rounded-2xl p-8 max-w-md w-full shadow-[0_0_50px_rgba(211, 225, 51,0.2)] animate-scale-in">
                 {/* Close button */}
                 <button
                     onClick={onClose}

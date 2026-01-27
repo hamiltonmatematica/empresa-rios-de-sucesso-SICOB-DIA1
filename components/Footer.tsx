@@ -4,7 +4,7 @@ export const Footer: React.FC = () => {
   return (
     <footer className="bg-brand-dark py-12 border-t border-brand-neon/10">
       <div className="container mx-auto px-4 text-center">
-        <div className="font-serif font-bold text-2xl tracking-tighter leading-none text-brand-neon mb-6 opacity-80 drop-shadow-[0_0_5px_rgba(0,209,255,0.3)]">
+        <div className="font-serif font-bold text-2xl tracking-tighter leading-none text-brand-neon mb-6 opacity-80 drop-shadow-[0_0_5px_rgba(211, 225, 51,0.3)]">
           EMPRESÁRIOS<br />
           <span className="text-white text-base tracking-widest font-sans font-light">DE SUCESSO</span>
         </div>

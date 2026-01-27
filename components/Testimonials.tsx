@@ -37,7 +37,7 @@ export const Testimonials: React.FC = () => {
 
                 <div className="grid md:grid-cols-2 gap-6 max-w-6xl mx-auto">
                     {testimonials.map((item, index) => (
-                        <div key={index} className="bg-white/5 border border-white/10 p-5 md:p-6 rounded-2xl relative backdrop-blur-sm shadow-[0_0_30px_rgba(0,0,0,0.2)] flex flex-col">
+                        <div key={index} className="bg-white/5 border border-white/10 p-5 md:p-6 rounded-2xl relative backdrop-blur-sm shadow-[0_0_30px_rgba(211, 225, 51,0.2)] flex flex-col">
                             <Quote className="absolute top-6 left-6 text-brand-neon/20 w-12 h-12 -z-10" />
 
                             <div className="relative z-10 flex-1">

@@ -26,10 +26,10 @@ export const Hero: React.FC = () => {
         </div>
 
         {/* Top Tagline */}
-        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-blue/30 border border-brand-neon/30 text-brand-neon mb-6 backdrop-blur-sm animate-fade-in-down shadow-[0_0_15px_rgba(0,209,255,0.3)]">
+        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-blue/30 border border-brand-neon/30 text-brand-neon mb-6 backdrop-blur-sm animate-fade-in-down shadow-[0_0_15px_rgba(211, 225, 51,0.3)]">
           <span className="relative flex h-3 w-3">
             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-neon opacity-75"></span>
-            <span className="relative inline-flex rounded-full h-3 w-3 bg-cyan-400"></span>
+            <span className="relative inline-flex rounded-full h-3 w-3 bg-brand-neon"></span>
           </span>
           <span className="text-sm font-semibold tracking-wide">ROADSHOW NORTE DE MINAS</span>
         </div>
@@ -38,7 +38,7 @@ export const Hero: React.FC = () => {
         <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl font-bold mb-4 leading-tight tracking-tight">
           <span className="text-white drop-shadow-[0_0_10px_rgba(255,255,255,0.3)]">EMPRESÁRIOS</span>
           <br />
-          <span className="neon-text-gradient drop-shadow-[0_0_15px_rgba(0,209,255,0.5)]">DE SUCESSO</span>
+          <span className="neon-text-gradient drop-shadow-[0_0_15px_rgba(211, 225, 51,0.5)]">DE SUCESSO</span>
         </h1>
 
         <p className="font-light text-xl md:text-2xl text-gray-300 max-w-3xl mb-8 leading-relaxed">
@@ -61,7 +61,7 @@ export const Hero: React.FC = () => {
             <p className="text-brand-neon font-bold text-lg">FRED ROCHA</p>
             <p className="text-slate-400 text-xs uppercase tracking-widest">Vendas e Inovação</p>
           </div>
-          <div className="h-12 w-[1px] bg-brand-neon/30 shadow-[0_0_10px_rgba(0,209,255,0.5)]"></div>
+          <div className="h-12 w-[1px] bg-brand-neon/30 shadow-[0_0_10px_rgba(211, 225, 51,0.5)]"></div>
           <div className="text-left">
             <p className="text-brand-neon font-bold text-lg">DIEGO SUZANO</p>
             <p className="text-slate-400 text-xs uppercase tracking-widest">Estratégia e Gestão</p>
@@ -69,13 +69,13 @@ export const Hero: React.FC = () => {
         </div>
 
         {/* City Ticker */}
-        <div className="w-full max-w-4xl bg-brand-dark/50 border border-brand-neon/20 backdrop-blur-md rounded-xl p-6 shadow-[0_0_30px_rgba(0,209,255,0.05)]">
+        <div className="w-full max-w-4xl bg-brand-dark/50 border border-brand-neon/20 backdrop-blur-md rounded-xl p-6 shadow-[0_0_30px_rgba(211, 225, 51,0.05)]">
           <p className="text-gray-400 text-sm mb-4 uppercase tracking-widest">Cidades Confirmadas</p>
           <div className="flex flex-wrap justify-center gap-4 md:gap-8">
             {CITIES_FULL.map((city) => (
               <div key={city.name} className="flex flex-col items-center group cursor-default">
                 <div className="flex items-center gap-2 text-white font-semibold transition-colors group-hover:text-brand-neon">
-                  <MapPin size={16} className="text-brand-neon group-hover:drop-shadow-[0_0_8px_rgba(0,209,255,0.8)] transition-all" />
+                  <MapPin size={16} className="text-brand-neon group-hover:drop-shadow-[0_0_8px_rgba(211, 225, 51,0.8)] transition-all" />
                   {city.name}
                 </div>
                 {city.date && <div className="text-xs text-brand-neon/80 mt-1">{city.date}</div>}
